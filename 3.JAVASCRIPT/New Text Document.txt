@@ -1,0 +1,3 @@
+alert(document.getElementById("text").innerHTML);=====this gives the text as alert in paragraph.
+document.getElementById("text").innerHTML="some more tesxxtdsalkhkashf";=====the some more text message will be loaded.
+    

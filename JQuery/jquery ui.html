@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>jquery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <style>
+        #square{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            
+        }
+        #resizable{
+            width: 200px;
+            height: 200px;
+            background-color:orangered;
+            
+        }
+    </style>
+
+    </head>
+    
+
+<body>
+
+    <div id="square"></div>
+    <div id="resizable"></div>
+    <script>
+    
+    $("#square").draggable();
+    $("resizable").accordion();
+    </script>
+</body>
+</html>

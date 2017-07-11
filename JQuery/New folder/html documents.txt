@@ -1,0 +1,23 @@
+<h1>=largest heading line.
+<h6>=Smallest heading line.
+<p>=paragraph starting.
+</p>=paragraph ending.
+<br />=break in line(means it moves to next line in paragraph).
+<hr />=divides paragraph by line.
+<strong>this makes the text bold</strong>.
+<em>this makes italics</em>.
+<u>this tag underlines the word</u>.
+<strike>this will strikes the line</strike>.
+<ul>unordered lists</ul>
+<li>list number one</li>
+<ol>this tag is for orderd list(which we will get in numbered order</ol>
+<img src="path of the image" width="400" height="400" />(which shows the image on the web browser.we can add the web address of image instead of path)
+
+
+
+                   forms
+<form>Forms are opened and closed in these tags</forms>
+<input type="text" name="text" value="1" />
+<select>where we can add options to it by option tag<option></option></select>
+these all input and select tags will work out side the form tags too
+

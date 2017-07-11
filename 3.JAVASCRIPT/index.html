@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        
+        body{
+            font-family: sans-serif;
+        }
+        #box{
+            background-color: aqua;
+             width: 200px;
+            height: 200px;
+            display: none;
+            position: relative;
+        }
+    </style>
+</head>
+ 
+    <body>
+
+        <div id="box"></div>
+<p><span id="time">0</span>sec</p>
+        <h1>Reaction Game</h1>
+        <p>Click the color as fast as you can?</p>
+        
+
+        
+       
+  <script type="text/javascript">
+ 
+      function randomcolor(){
+          var letters='0123456789ABCDEF'.split('');
+          var color='#';
+          for(i=0;i<6;i++){
+              color +=letters[Math.round(Math.random()*15)];
+          }
+          return color;
+          
+      }
+      
+      var createdtime; var clickedtime;var reactiontime;
+      function raj(){
+           var num=Math.random();
+      num=num*2000;
+    
+          
+           setTimeout(function(){
+               if(Math.random()<0.5){
+                   document.getElementById("box").style.borderRadius="100px"; 
+               }
+               else{
+                    document.getElementById("box").style.borderRadius="0px";
+               }
+              
+               var top=Math.random();
+               top=top*300;
+               var left=Math.random();
+               left=left*300;
+               document.getElementById("box").style.top=top+"px";
+               document.getElementById("box").style.left=left+"px";
+               document.getElementById("box").style.backgroundColor=randomcolor();
+              document.getElementById("box").style.display="block";
+       createdtime=Date.now();
+   },num);
+    
+      }
+      
+     
+      document.getElementById("box").onclick=function(){
+       this.style.display="none";
+          
+          clickedtime=Date.now();
+          reactiontime=(clickedtime-createdtime) /1000;
+          document.getElementById("time").innerHTML=("yours time"+reactiontime);
+          raj();
+   }
+      raj();
+  
+    </script>
+</body>
+</html>

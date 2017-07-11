@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>jquery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style>
+    
+        #red1{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            
+        }
+           #red2{
+            background-color:red;
+            width: 200px;
+            height: 200px;
+        }
+        #green{
+           background-color:red;
+            width: 200px;
+            height: 200px;
+        border-radius: 100px;
+            
+        }
+    
+    </style>
+
+    </head>
+    
+
+<body>
+
+    
+   
+    <div id="green"></div><br />
+    
+    <p id="one">this is the content of text</p>
+    <p id="two">this is another text</p>
+    
+    
+    <iframe src="https://www.youtube.com"></iframe>
+    <script>
+    $("#green").hover(function(){
+    /*    alert("you clicked circle please click ok to close this window");
+    });
+        
+         $("#red1").click(function(){
+        alert("you clicked square please click ok to close this window");
+       });
+        $("#red2").click(function(){
+        alert("you clicked red2 lease click ok to close this window");
+        });*/
+    
+        $("#one").html("changed the text");
+    //alert($("#two").html("src"));        
+    });
+        
+        
+    </script>
+</body>
+</html>
