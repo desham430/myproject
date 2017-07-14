@@ -7,6 +7,9 @@
       color:#fff;
   }
 
+input-group{
+    background-color:#f4511e; 
+}
   h2 {
       font-size: 24px;
       text-transform: uppercase;
@@ -15,7 +18,7 @@
       margin-bottom: 30px;
   }
   h4 {
-      font-size: 19px;
+      font-size: 23px;
       line-height: 1.375em;
       color:#fff;
       font-weight: 400;
@@ -27,6 +30,11 @@ h3 {
     text-align: center;
     
 }
+#cl2{
+    font-size: 18px;
+    font-family: cursive;
+    align-content: center;
+}
 h1 {
    
       
@@ -36,7 +44,7 @@ h1 {
   .jumbotron {
       background-color:#f4511e;
       color: #fff;
-      padding: 100px 25px;
+      padding: 110px 25px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -50,6 +58,9 @@ h1 {
       color: #f4511e;
       font-size: 50px;
   }
+.name {
+    background-color: #f4511e;
+}
   .logo {
       color: #f4511e;
       font-size: 200px;
